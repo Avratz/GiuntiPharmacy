@@ -1,0 +1,725 @@
+
+
+// variables
+
+$giunti-color         : #B2D243;
+$giunti-color-2       : #ABC443;
+$giunti-color-comp    : #9E3289;
+
+// . General
+
+body{
+  background-color: #f7f7f7;
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.padding-giunti{
+  padding: 3em 0em;
+
+}
+.white-bg{
+  background-color: #FFF;
+}
+
+.grey-bg{
+  background-color: #EDEDED;
+}
+
+.white-bg, .grey-bg {
+  img{
+    margin: 1em 0;
+  }
+  h2{
+    color: $giunti-color;
+    font-weight: bold;
+  }
+  p{
+    padding: 1em 1em 0;
+    font-size: 1.15em;
+  }
+  ul{
+    list-style: none;
+    padding-left: 30px;
+  }
+}
+
+.line{
+  margin: auto;
+  width: 95%;
+  height: 3px;
+  background-color: #CECECE;
+  @media (min-width: 992px) {
+    width: 80%;
+    height: 2px;
+  }
+}
+
+section{
+  text-align: center;
+}
+
+.giunti-shadow{
+  -webkit-box-shadow: 0px 0px 11px 1px rgba(194,194,194,1);
+  -moz-box-shadow: 0px 0px 11px 1px rgba(194,194,194,1);
+  box-shadow: 0px 0px 11px 1px rgba(194,194,194,1);
+background-color: #FFF;
+}
+
+.btn-giunti {
+    color: #fff;
+    background-color: $giunti-color;
+    border-color: $giunti-color;
+    border-radius: 0;
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:hover{
+      background-color: $giunti-color-2;
+    }
+  }
+
+.img-giunti{
+  img{
+    width: 230%;
+    @media (min-width: 576px) {
+      width: 150%;
+    }
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+  h5{
+    font-size: 1.5em;
+    @media (min-width: 992px) {
+      font-size: 3em;
+    }
+  }
+  a{
+    color: white;
+    }
+    a:hover{
+      color: white;
+      text-decoration: none;
+    }
+    a:visited{
+      color: white;
+    }
+}
+
+.carousel-caption{
+  bottom: 35%;
+  @media (min-width: 992px) {
+    bottom: 160px;
+  }
+  @media (min-width: 1200px) {
+    bottom: 200px;
+  }
+}
+
+// . Main section -------------------//
+
+#main{
+
+}
+
+.nav-horarios{
+  display: block;
+  padding: 0.3em 0;
+  @media (min-width: 992px) {
+    padding: 0.3em 2.2em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.direccion-top, .telefono-top {
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+    color: black;
+  }
+}
+
+.social-icons{
+  i{
+    font-size: 2em;
+  }
+  a{
+    color: $giunti-color;
+    }
+    a:hover{
+      color: $giunti-color;
+      text-decoration: none;
+    }
+    a:visited{
+      color: $giunti-color;
+    }
+}
+
+.navbar-brand {
+  margin: auto;
+  @media (min-width: 992px) {
+    margin: 0;
+  }
+}
+#carouselMain{
+  position:relative;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0.3em;
+  color: white;
+  @media (min-width: 1200px) {
+    font-size: 1em;
+    padding: 0.4em;
+  }
+}
+
+
+.navbar-light{
+    padding: 0;
+}
+nav {
+  text-align: center;
+  color: #000;
+  .horario, .direccion-top, .telefono-top{
+    display: inline-block;
+    @media (min-width: 992px) {
+        padding-top: 10px;
+    }
+
+    b{
+      color: #000;
+    }
+    i{
+      color: $giunti-color;
+    }
+
+  }
+}
+
+#sab, #dom {
+  display: none;
+}
+h1 {
+  text-align: center;
+}
+
+.carousel-inner h5{
+  color: #FFF;
+}
+.turnos-outer-container{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.turnos-container{
+  text-align: center;
+  margin:auto;
+  width: 300px;
+  height: 50px;
+}
+
+.turnos-icon{
+  background-color: rgba(175, 210, 67, 0.7);
+  border-radius: 200px 0px 0px 200px;
+  -moz-border-radius: 200px 0px 0px 200px;
+  -webkit-border-radius: 200px 0px 0px 200px;
+  border: 0px solid #000000;
+  float: left;
+  i{
+    font-size: 2em;
+    color: white;
+    padding: 0.5em;
+  }
+}
+
+.turnos-info{
+  float: right;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 0px 200px 200px 0px;
+  -moz-border-radius: 0px 200px 200px 0px;
+  -webkit-border-radius: 0px 200px 200px 0px;
+  border: 0px solid #000000;
+  padding: 0.5em 1.38em 0.5em 1em;
+  text-transform: uppercase;
+  b{
+    color: #111;
+  }
+}
+
+.giunti-bg{
+  background-color: $giunti-color;
+}
+.giunti-bg-comp{
+  background-color: $giunti-color-comp;
+}
+
+.giunti-bg, .giunti-bg-comp {
+  width: 100%;
+  padding: 1em;
+  color: white;
+  i{
+    font-size: 2em;
+  }
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0.4em;
+    font-size: 1.2em;
+    vertical-align: top;
+    a{
+      color: white;
+      }
+      a:hover{
+        color: white;
+        text-decoration: none;
+      }
+      a:visited{
+        color: white;
+      }
+  }
+}
+
+.c-footer, .contacto-direccion, .contacto-telefono{
+  a{
+    color: white;
+    }
+    a:hover{
+      color: white;
+      text-decoration: none;
+    }
+    a:visited{
+      color: white;
+    }
+}
+// . Nosotros section ---------------//
+
+  #nosotros{
+    p{
+      text-align: center;
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+    }
+    h3{
+      font-size: 1.5rem;
+    }
+  }
+
+  .fa-check-circle, .fa-user-circle, .fa-star, .fa-users{
+    color: $giunti-color;
+    font-size: 2em;
+    padding: 0.5em;
+    @media (min-width: 768px) {
+      font-size: 3em;
+      padding: 0.8em;
+    }
+  }
+
+// . Servicios Section --------------//
+
+#servicios-controls{
+  background-color: $giunti-color;
+  padding: 1em 0;
+  .carousel-control-prev, .carousel-control-next{
+    color: #000;
+  }
+  .carousel-item{
+    img{
+      margin: auto;
+    }
+  }
+}
+
+// . Trabajamos Section ------------//
+
+#trabajamos-controls, #trabajamos-controls-desktop {
+  margin-bottom: 3em;
+  .carousel-item{
+    img{
+      margin: auto;
+    }
+  }
+  .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23B2D243' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/></svg>");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B2D243' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+}
+
+
+// . Obras sociales section ------------//
+#Obras-sociales{
+  p{
+    font-size: 1.3em;
+    text-align: left;
+    @media (min-width: 992px) {
+      text-align: center;
+      padding: 1em 0;
+    }
+  }
+}
+.lista-obras{
+  text-align: left;
+  @media (min-width: 992px) {
+  display: inline-block;
+  margin: auto;
+  padding: 1em 0;
+}
+  li{
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 5px;
+    font-weight: bold;
+    background-color: $giunti-color;
+    color: white;.
+    border-left: solid 20px $giunti-color-2;
+
+    @media (min-width: 992px) {
+      display: inline;
+      padding: 15px 10px;
+      margin: 0 5px;
+    }
+
+  }
+
+}
+
+
+// . Blog Section ------------------//
+
+.post-giunti{
+  text-align: left;
+  border: 1px solid #EDEDED;
+  position: relative;
+  margin: auto;
+  h3{
+    font-weight: bold;
+    padding: 0.5em 0.3em 0.5em;
+  }
+  p{
+    padding: 0.2em 0.5em 1em;
+    margin-bottom: 2em;
+  }
+  button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  img{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+// . Contacto Section --------------//
+
+.contacto-direccion, .contacto-telefono{
+  width: 95%;
+  margin: 15px auto;
+  background-color: $giunti-color;
+  color: white;
+  text-align: left;
+  i{
+    background-color: $giunti-color-2;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0.8em;
+    vertical-align: top;
+    font-size: 1em;
+  }
+}
+.contacto-direccion{
+
+  i{
+    padding: 0.5em 0.62em;
+    font-size: 1.5em;
+  }
+}
+
+.contactos-footer{
+
+  i{
+    color: white;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0.8em;
+    vertical-align: top;
+    font-size: 1em;
+    color: black;
+  }
+}
+.c-footer{
+  margin: 0;
+  text-align: left;
+}
+
+
+#map{
+  background-image: url('../img/mapa.jpg');
+  background-size: contain;
+}
+
+
+// . Footer Section ---------------//
+
+.footer{
+  background-color: $giunti-color;
+  color: white;
+  text-align: center;
+}
+
+.line-bottom{
+  height: 1px;
+  width: 97%;
+  background-color: white;
+  margin:auto;
+  margin-bottom: 2em;
+}
+
+.text-bottom{
+  font-size: 1.3em;
+}
+
+.social-bottom{
+  font-size: 1.3em;
+  a{
+    color: white;
+    }
+    a:hover{
+      color: white;
+      text-decoration: none;
+    }
+    a:visited{
+      color: white;
+    }
+}
+.footer-turnos{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5em 0;
+  margin: 1em 0;
+  @media (min-width: 768px) {
+    margin: 3em auto;
+    width: 85%;
+  }
+}
+
+
+
+
+//post
+
+
+
+
+.post-giunti, .direccion-top, .telefono-top{
+  a{
+    color: black;
+    }
+    a:hover{
+      color: black;
+      text-decoration: none;
+    }
+    a:visited{
+      color: black;
+    }
+}
+
+.single-post{
+  @media (min-width: 992px) {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  h2{
+    padding: 2em 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    @media (min-width: 992px) {
+      font-size: 2.5em;
+
+    }
+    a{
+      color: black;
+      }
+      a:hover{
+        color: black;
+        text-decoration: none;
+      }
+      a:visited{
+        color: black;
+      }
+  }
+
+  .single-line{
+    width: 95%;
+    height: 1px;
+    background-color: lightgrey;
+    margin: auto;
+    margin-bottom: 1.5em;
+  }
+  .single-text{
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.2em;
+    a{
+      color: $giunti-color;
+      }
+      a:hover{
+        color: $giunti-color;
+        text-decoration: none;
+      }
+      a:visited{
+        color: $giunti-color;
+      }
+  }
+}
+
+.img-post{
+  img{
+    width: 100%;
+  }
+}
+
+.shadow-side{
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+}
+
+.sticktop{
+  @extend .shadow-side;
+}
+.sticky-top-opacity{
+  opacity: 0;
+  margin-top: -100px;
+}
+.stickyanimatedown{
+-moz-animation-duration: 1s;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-moz-animation-name: slidein;
+-webkit-animation-name: slidein;
+animation-name: slidein;
+animation-timing-function: ease-in-out;
+}
+
+.stickyanimateup{
+-moz-animation-duration: 1s;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-moz-animation-name: slideup;
+-webkit-animation-name: slideup;
+animation-name: slideup;
+animation-timing-function: ease-in-out;
+
+}
+
+@keyframes slidein {
+from {
+  margin-top: -100px;
+  opacity: 0;
+}
+to {
+  margin-top: 0;
+  opacity: 1;
+}
+}
+
+@-moz-keyframes slidein {
+from {
+  margin-top: -100px;
+  opacity: 0;
+}
+
+to {
+  margin-top: 0;
+  opacity: 1;
+}
+}
+
+@-webkit-keyframes slidein {
+from {
+  margin-top: -100px;
+  opacity: 0;
+}
+
+to {
+  margin-top: 0;
+  opacity: 1;
+}
+}
+
+
+@keyframes slideup {
+  from {
+  margin-top: 0;
+  opacity: 1;
+  }
+
+  to {
+  margin-top: -100px;
+  opacity: 0;
+  }
+}
+
+@-moz-keyframes slideup {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  to {
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideup {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  to {
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+
+.share {
+  margin-left: 13px;
+  p{
+    padding: 0 0.5em;
+  }
+}
+
+.ic{
+  padding: 0 0.5em;
+  a{
+    color: $giunti-color;
+    }
+    a:hover{
+      color: $giunti-color;
+      text-decoration: none;
+    }
+    a:visited{
+      color: $giunti-color;
+    }
+}
